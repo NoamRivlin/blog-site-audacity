@@ -1,3 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgba(10, 13, 11, 0.797);
+    color: rgb(152, 216, 194);
+    font-size: 18px;
+
+    /* border: 1px solid red; */
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    /* display: block; */
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    /* margin: auto; */
+    bottom: 0;
 }
