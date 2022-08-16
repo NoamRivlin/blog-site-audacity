@@ -7,60 +7,19 @@ body {
     background-color: rgba(10, 13, 11, 0.797);
     color: rgb(152, 216, 194);
     font-size: 18px;
-    /* font-size: 1.3em; */
+
+}
+
+header {
     display: flex;
-    flex-flow: column;
-    gap: 13px;
-
+    justify-content: space-between;
+    padding: 6px;
+    align-items: center;
+    background-color: #FFE7E7;
+    color: #1044FF;
 }
 
-main {
-    display: grid;
-}
-
-header>h3, h1 {
-    text-align: center;
-    margin: 0;
-}
-
-header h3 {
-    padding: 5px;
-    align-items: flex-start;
-    text-align: start;
-}
-
-header nav {
-    display: inline-block;
-}
-
-.content-wrapper {
-    /* display: grid; */
-}
-
-
-
-/*footer container isnt around the footer on the dom, giving it position fixed bootom 0 doesnt works as wanted... to do
-*/
-.footer-container {
-    /* keeping all of my previous attempts at this... */
-    /* align-self: flex-end; */
-    /* display: flex; */
-    /* align-self: center; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-self: center; */
-    /* position: fixed;
-    bottom: 0; */
-    width: 50%;
-    align-self: center;
-}
-
-footer {
-    font-size: 0.8em;
-    justify-self: flex-end;
-    /* position: relative; */
-    /* position: fixed; */
-    /* bottom: 0; */
-    text-align: center;
-
+.hero {
+    background-color: #FFE7E7;
+    color: #1044FF;
 }
