@@ -9,32 +9,46 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./css/index_style.css" />
   </head>
   <body>
-    <header>
-      <section class="logo">hug your trees</section>
-      <!-- add a dropdown menu -->
+    <header class="header">
+      <section class="logo">PSB</section>
       <nav>
         <a><i class="ri-menu-2-line"></i></a>
       </nav>
+      <!-- ^add a dropdown menu^ -->
     </header>
     <!--  
       making a grid wrapper or using the main with display grid ?
     -->
-    <main>
+    <main id="main-content">
       <section class="hero">
-        <h1 class="title">Pierre R Bernard</h1>
+        <h1 class="title">
+          Pierre R <br />
+          Bernard
+        </h1>
         <h3 class="sub-title">Personal Blog</h3>
       </section>
-      <div class="content-wrapper">
-        <aside id="">sidebar</aside>
-        <article>gallery</article>
-        <aside>sidebar</aside>
-      </div>
-      <section id="share-btns">share icons</section>
+      <article id="posts">posts</article>
     </main>
 
+    <nav id="next-previous">
+      <a href="">1</a> <a href="">2</a> <a href="" class="next">next</a>
+    </nav>
+    <aside id="categories">
+      <h3>categories</h3>
+      <ul>
+        <li class="categorie-list">a</li>
+        <li class="categorie-list">b</li>
+        <li class="categorie-list">c</li>
+        <li class="categorie-list">d</li>
+        <li class="categorie-list">e</li>
+      </ul>
+    </aside>
+    <aside id="recent-posts">recent posts with images</aside>
+    <aside id="tags">tags, make a grid with word each cell</aside>
+    <section id="contact">btns with info</section>
     <div class="footer-container">
       <footer>
         -copyrights icon- <br />
