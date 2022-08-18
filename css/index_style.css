@@ -1,36 +1,14 @@
-* {
-    box-sizing: border-box;
-    /* border: 1px solid lightblue; */
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    max-width: 100%;
-}
-
-body {
-    background-color: rgba(10, 13, 11, 0.797);
-    color: rgb(152, 216, 194);
-    font-size: 18px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* display: grid;
-    grid-area:
-        ""
-    ; */
-
-}
+@import '/css/header.css';
 
 .header {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
-    background-color: #242121;
+    background-color: var(--sec);
     color: #929bbb;
 }
+
 
 .title {
     margin: 0;
@@ -41,7 +19,7 @@ body {
 .hero {
     /* display: flex;
     flex-direction: column; */
-    background-color: #242121;
+    background-color: var(--sec);
     color: #929bbb;
     padding: 1rem;
     font: 2rem 'Noticia Text';
@@ -88,7 +66,7 @@ body {
 
 .card-image-container img {
     border-radius: 15px;
-    padding: 0 0 2rem 0;
+    margin: 0 0 2rem 0;
 }
 
 figcaption {
@@ -100,17 +78,29 @@ figcaption {
 }
 
 .user-container {
-    padding: 0 0 1rem 0;
+    padding: 0 0 3rem 0;
     display: flex;
     align-items: center;
 }
 
 .face-container {
-    background-image: url("/images/smallfacepic1.jpg");
     background-size: contain;
     width: 3rem;
     aspect-ratio: 1;
     border-radius: 50%;
+}
+
+.face1 {
+    background-image: url("/images/smallfacepic1.jpg");
+}
+
+.face2 {
+    background-image: url("/images/smallfacepic2.jpg");
+
+}
+
+.face3 {
+    background-image: url("/images/smallfacepic3.jpg");
 }
 
 .face-words {
@@ -120,27 +110,35 @@ figcaption {
 
 
 
-#categories,
-#recent-posts,
-#tags {
-    border: 1px solid #5c72c3;
-    border-radius: 3px;
-}
+/* ---------------------------------nav btns */
 
 #next-previous {
-    /* display: flex;
-    justify-content: space-between; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
+    display: flex;
+    padding: 0rem 2rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 3fr; */
 }
 
-#next-previous :first-child {
+.one, .two {
+    /* flex-grow: 1; */
+    height: 3rem;
+    width: 3rem;
+}
+
+.next {
+    flex-grow: 1;
+}
+
+#next-previous :hover {
     color: white;
     background-color: #1044FF;
     border: 1px solid #1044FF;
 }
 
 #next-previous * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #1044FF;
     text-decoration: none;
     background-color: #e8eaee;
@@ -151,12 +149,12 @@ figcaption {
 }
 
 
+/* -------------------------------------categories */
 
 #categories {
-    /* display: flex;
-    flex-direction: column; */
+    border: 1px solid #5c72c3;
+    border-radius: 3px;
     padding: 2rem;
-
 }
 
 #categories ul {
@@ -177,44 +175,70 @@ figcaption {
     display: flex;
 }
 
-#categories h3 {}
+#categories h3 {
+    padding: 0 0 1rem 0;
+}
 
-#tags {
+/* -------------------------------------contact-bar */
+
+#contact-bar {
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    /* gap: 1rem; */
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr); */
-    padding: 2rem;
+    flex-direction: column;
+    margin: 4rem 2rem;
+}
+
+
+#contact-intro {
+    margin-bottom: 2rem;
+}
+
+
+
+.contact-me {
+    font-size: xx-large;
+    padding: 1rem 0;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
 
 }
 
-#tags h2 {
-    width: 100%;
-    /* grid-column-start: 1;
-    grid-column-end: 4; */
-
-    /* grid-area: tags; */
-    /* margin-top: 0.5rem; */
-}
-
-#tags p {
-    margin: 1.5rem 1rem 0 0;
-    width: 25%;
-    /* grid-area: p; */
-}
-
-footer {
-    width: 100%;
-    padding: 1rem;
-    background-color: rgba(208, 3, 44, 0.797);
-    /* margin-top: 20px; */
-    /* position: fixed;
-    bottom: 0; */
-    text-align: center;
+.contact-card {
+    /* width: 100%; */
+    display: flex;
+    margin-bottom: 2rem;
 
 }
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 0 0;
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+.contant-card-text * {
+    padding: 0.3rem;
+}
+
+.contant-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ---------------------------nav-share-icons */
+
+#nav-share-icons {
+    margin: 0 auto;
+}
+
+
 
 /* maybe do a position sticky for  */
