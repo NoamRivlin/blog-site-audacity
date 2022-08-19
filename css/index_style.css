@@ -241,4 +241,31 @@ figcaption {
 
 
 
-/* maybe do a position sticky for  */
+/* maybe do a position sticky for something */
+
+/* ------------------------------------post-blog */
+
+.back-to-link-container {
+    padding: 2.5rem;
+}
+
+.back-to-link {
+    display: flex;
+    color: inherit;
+    text-decoration: none;
+}
+
+.bt-arrow {
+    margin-right: 0.5rem;
+}
+
+.blog-post-title-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.blog-post-title {
+    font-size: 3rem;
+}

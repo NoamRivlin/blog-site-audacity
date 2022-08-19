@@ -4,7 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>To Be Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index_style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <section class="logo">PSB</section>
+      <nav>
+        <a><i class="ri-menu-2-line"></i></a>
+      </nav>
+      <!-- ^add a dropdown menu^ -->
+    </header>
+    <!--  
+      making a grid wrapper or using the main with display grid ?
+    -->
+    <main id="main-content">
+      <div class="back-to-link-container">
+        <a href="../index.html" class="back-to-link"
+          ><i class="ri-arrow-left-line bt-arrow"></i>
+          <p>back to blog</p></a
+        >
+      </div>
+      <article>
+        <div class="blog-post-title-container">
+          <h1 class="blog-post-title">Mei ei tollit epicurei invenire</h1>
+        </div>
+        <div class="user-container">
+          <div class="face-container face2"></div>
+          <p class="face-words">broly lol</p>
+        </div>
+      </article>
+    </main>
+    <aside id="categories">
+      <h3>categories</h3>
+      <ul>
+        <li class="categorie-list">
+          <p>Lorem</p>
+          <p>1</p>
+        </li>
+        <li class="categorie-list">
+          <p>ipsum</p>
+          <p>1</p>
+        </li>
+        <li class="categorie-list">
+          <p>dolor</p>
+          <p>1</p>
+        </li>
+        <li class="categorie-list">
+          <p>sit</p>
+          <p>1</p>
+        </li>
+        <li class="categorie-list">
+          <p>amet</p>
+          <p>1</p>
+        </li>
+      </ul>
+    </aside>
+    <aside id="contact-bar">
+      <div id="contact-intro">
+        <p class="share-your">Share your thoughts</p>
+        <p class="contact-me">Contact me</p>
+      </div>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="icon-container">
+            <i class="ri-map-pin-fill icon"></i>
+          </div>
+          <div class="contant-card-text">
+            <h2>Office</h2>
+            <p>Mel timeam, 123 45-67</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="icon-container">
+            <i class="ri-phone-fill icon"></i>
+          </div>
+          <div class="contant-card-text">
+            <h2>Office</h2>
+            <p>Mel timeam, 123 45-67</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="icon-container">
+            <i class="ri-mail-send-line icon"></i>
+          </div>
+          <div class="contant-card-text">
+            <h2>Office</h2>
+            <p>Mel timeam, 123 45-67</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- tags are not needed in the project.... -->
+    <!-- <aside id="tags">
+      <h2>Tags</h2>
+      <p></p>
+    </aside> -->
+    <nav id="nav-share-icons">
+      <button class="share icon">
+        <i class="ri-facebook-circle-fill"></i>
+      </button>
+      <button class="share icon"><i class="ri-twitter-line"></i></button>
+      <button class="share icon"><i class="ri-instagram-line"></i></button>
+    </nav>
+    <footer>&copyNoam Rivlin 2022</footer>
+    <script src="/app.js"></script>
+  </body>
 </html>
