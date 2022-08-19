@@ -12,6 +12,17 @@
     padding: 0;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: #2b72a1;
+    transition: color 0.3s, background 0.3s;
+}
+
 img {
     max-width: 100%;
 }
