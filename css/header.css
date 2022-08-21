@@ -4,10 +4,8 @@
     --text-color: rgb(152, 216, 194);
 }
 
-
 * {
     box-sizing: border-box;
-    /* border: 1px solid lightblue; */
     margin: 0;
     padding: 0;
 }
