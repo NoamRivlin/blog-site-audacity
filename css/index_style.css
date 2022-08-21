@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    margin-bottom: 3rem;
     align-items: center;
     background-color: var(--sec);
     color: #929bbb;
@@ -18,8 +17,6 @@
 }
 
 .hero {
-    /* display: flex;
-    flex-direction: column; */
     background-color: var(--sec);
     color: #929bbb;
     padding: 1rem;
@@ -44,12 +41,8 @@
     margin: 0rem 2rem;
 }
 
-/* #main-content {
-    padding: 3rem;
-} */
 
 /* ----------------------------------------------posts */
-#posts {}
 
 #posts,
 .card {
@@ -135,7 +128,6 @@ figcaption {
     flex-grow: 1;
 }
 
-#next-previous :hover {}
 
 #next-previous * {
     display: flex;
@@ -145,7 +137,6 @@ figcaption {
     text-decoration: none;
     background-color: var(--sec);
     margin-right: 1rem;
-    /* border: 1px solid var(--); */
     border-radius: 3px;
     text-align: center;
 }
@@ -208,7 +199,6 @@ figcaption {
 }
 
 .contact-card {
-    /* width: 100%; */
     display: flex;
     margin-bottom: 2rem;
 
@@ -248,7 +238,7 @@ figcaption {
 /* ------------------------------------post-blog */
 
 .back-to-link-container {
-    margin-bottom: 2.5rem;
+    margin: 2.5rem 0;
 }
 
 .back-to-link {
@@ -270,4 +260,21 @@ figcaption {
 
 .blog-post-title {
     font-size: 3rem;
+}
+
+q {
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ---------------------------- tablet media query */
+
+@media only screen and (min-width:500px) {
+    body {
+        display: grid;
+
+    }
+
 }

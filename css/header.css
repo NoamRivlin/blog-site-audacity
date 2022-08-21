@@ -73,9 +73,5 @@ footer {
     width: 100%;
     padding: 1rem;
     background-color: var(--sec);
-    /* margin-top: 20px; */
-    /* position: fixed;
-    bottom: 0; */
     text-align: center;
-
 }
