@@ -231,20 +231,15 @@ figcaption {
     margin: 0 auto;
 }
 
-
-
-/* maybe do a position sticky for something */
-
 /* ------------------------------------post-blog */
 
-.back-to-link-container {
+#back-to-link-container {
+    display: inline-block;
     margin: 2.5rem 0;
 }
 
 .back-to-link {
     display: flex;
-    /* color: inherit;
-    text-decoration: none; */
 }
 
 .bt-arrow {
@@ -276,7 +271,7 @@ q {
         display: grid;
         grid-template-areas:
             "main main side"
-            /* "nav nav side"  how come this line isn't necessary  ?*/
+            /* "nav nav side"  how come this line isn't necessary  ? */
         ;
     }
 
