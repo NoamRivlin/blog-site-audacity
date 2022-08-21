@@ -34,11 +34,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* display: grid;
-    grid-area:
-        ""
-    ; */
-
 }
 
 button {
@@ -74,4 +69,5 @@ footer {
     padding: 1rem;
     background-color: var(--sec);
     text-align: center;
+    color: rgb(181, 157, 19);
 }

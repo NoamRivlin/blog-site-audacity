@@ -272,9 +272,44 @@ q {
 /* ---------------------------- tablet media query */
 
 @media only screen and (min-width:500px) {
-    body {
+    #main-grid-container {
         display: grid;
-
+        grid-template-areas:
+            "main main side"
+            /* "nav nav side"  how come this line isn't necessary  ?*/
+        ;
     }
 
+    #posts {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #categories {
+        grid-area: side;
+    }
+
+    #next-previous {
+        grid-area: nav;
+    }
+
+    #contact-intro {
+        text-align: center;
+    }
+
+    .contact-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #posts {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
