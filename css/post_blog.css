@@ -1,0 +1,29 @@
+#back-to-link-container {
+    display: inline-block;
+    margin: 2.5rem 0;
+}
+
+.back-to-link {
+    display: flex;
+}
+
+.bt-arrow {
+    margin-right: 0.5rem;
+}
+
+.blog-post-title-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.blog-post-title {
+    font-size: 3rem;
+}
+
+q {
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

@@ -1,4 +1,7 @@
 @import '../css/header.css';
+@import '../css/media_queries.css';
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Silkscreen&display=swap');
+@import '../css/post_blog.css';
 
 .header {
     display: flex;
@@ -9,9 +12,9 @@
     color: #929bbb;
 }
 
-
 .title {
     margin: 0;
+    font-family: 'Silkscreen', cursive;
 }
 
 .hero {
@@ -22,9 +25,10 @@
     text-align: center;
 }
 
+
 .sub-title {
     margin-top: 5px;
-    font: normal 1.5rem Source Sans Pro;
+    font-family: 'Fascinate', cursive;
 }
 
 #main-content,
@@ -169,12 +173,9 @@ figcaption {
     margin: 4rem 2rem;
 }
 
-
 #contact-intro {
     margin-bottom: 2rem;
 }
-
-
 
 .contact-me {
     font-size: xx-large;
@@ -220,8 +221,8 @@ figcaption {
     margin: 0 auto;
 }
 
-/* ------------------------------------post-blog */
-
+/* --------------------blog post when is inside of other css file it doesnt work*/
+/* 
 #back-to-link-container {
     display: inline-block;
     margin: 2.5rem 0;
@@ -250,49 +251,4 @@ q {
     display: block;
     padding: 1rem;
     margin-bottom: 1rem;
-}
-
-/* ---------------------------- tablet media query */
-
-@media only screen and (min-width:500px) {
-    #main-grid-container {
-        display: grid;
-        grid-template-areas:
-            "main main side"
-            /* "nav nav side"  how come this line isn't necessary  ? */
-        ;
-    }
-
-    #posts {
-        grid-area: main;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #categories {
-        grid-area: side;
-    }
-
-    #next-previous {
-        grid-area: nav;
-    }
-
-    #contact-intro {
-        text-align: center;
-    }
-
-    .contact-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-
-    #posts {
-        grid-area: main;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+} */
